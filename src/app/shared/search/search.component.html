@@ -1,0 +1,13 @@
+<span class="w-full max-w-md relative border rounded flex items-center">
+    <mat-icon class="flex-shrink-0 ml-2">
+      search
+    </mat-icon>
+    <input
+      type="text"
+      placeholder="Search..."
+      [(ngModel)]="searchTerm"
+      (input)="onSearch()"
+      class="flex-grow pl-2 pr-4 py-2 "
+    />
+  </span>
+

@@ -1,0 +1,37 @@
+<div class="container max-w-full h-full p-4">
+  <div class="p-3">
+    <div class="w-full md:flex justify-center">
+      <app-search
+        (searchEvent)="handleSearch($event)"
+        [searchTerm]="bookSearch"
+      ></app-search>
+    </div>
+
+    <ng-container *ngIf="books.length === 0; else hasBooks">
+      <span>Sorry.. No books found</span>
+    </ng-container>
+
+    <ng-template #hasBooks>
+      <div class="py-3 grid md:grid-cols-3 xs:grid-cols-1 gap-3">
+        <div
+          *ngFor="let book of books"
+          (click)="navigateToBook(book.id)"
+          class="cursor-pointer"
+        >
+          <app-book [book]="book"></app-book>
+        </div>
+      </div>
+    </ng-template>
+
+    <div class="pt-5 text-end">
+      <button
+        mat-flat-button
+        color="primary"
+        routerLink="/books"
+        aria-label="View books"
+      >
+        View all books
+      </button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,18 @@
+<div class="flex items-center justify-between bg-purple-400 p-4">
+  <h2 class="text-white cursor-pointer " routerLink="/">Goodreads</h2>
+  <div class="flex items-center space-x-4">
+    <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="menu">
+      <mat-icon class="text-white">more_vert</mat-icon>
+    </button> 
+    <mat-menu #menu="matMenu" >
+      <button mat-menu-item routerLink="/books" class="flex items-center" aria-label="books">
+        <mat-icon class="text-gray-500">menu_book</mat-icon>
+        <span class="ml-2">Books</span>
+      </button>
+    </mat-menu>
+  </div>
+  
+</div>
+
+
+<router-outlet></router-outlet>

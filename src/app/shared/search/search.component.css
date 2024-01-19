@@ -1,0 +1,10 @@
+.search-container {
+  display: flex;
+}
+
+input {
+    border: none;
+    outline: none;
+
+  width: 90%;
+}

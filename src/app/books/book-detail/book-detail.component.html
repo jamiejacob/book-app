@@ -1,0 +1,39 @@
+<div class="container mx-auto xs:p-3 md:p-5">
+    <div class="max-w-2xl mx-auto rounded-lg overflow-hidden border-2 border-gray-200">
+      <div class="flex md:flex-row flex-col">
+        <div class="px-2 md:w-1/4 ">
+          <img class="object-contain w-full h-full" src="{{ book.imageLink }}" alt="{{ book.title }} Image" />
+        </div>
+        <div class="md:w-3/4 px-6 py-4 ">
+          <h2 class="text-center">{{ book.title }}</h2>
+          <p class="text-gray-600 mb-1 flex text-center justify-center " title="author">
+           <mat-icon class="mr-1">person</mat-icon>
+             {{ book.author }}</p>
+
+           <div class="flex justify-center gap-3 mb-2">
+            <button mat-flat-button color="primary" aria-label="Read book">Read Book</button>
+            <button mat-flat-button color="secondary" aria-label="View Reviews">View Reviews</button>
+           </div>
+           
+          <!--Summary-->
+          <div class="text-gray-800 leading-loose mb-6">
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              Lorem Ipsum has been the industry's standard dummy text ever since the
+              1500s, when an unknown printer took a galley of type and scrambled it
+              to make a type specimen book.
+            </p>
+            <p>
+              It has survived not only five centuries, but also the leap into electronic
+              typesetting, remaining essentially unchanged. It was popularised in the
+              1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+              and more recently with desktop publishing software like Aldus PageMaker
+              including versions of Lorem Ipsum.
+            </p>
+          </div>
+          <p class="text-gray-700 italic">Released in {{ book.country }}</p>
+          <p class="text-gray-700 italic">Year of publishing {{ book.year }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
