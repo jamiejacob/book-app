@@ -8,6 +8,6 @@ import { Book } from 'src/app/book.model';
 })
 export class BookComponent {
   @Input()
-  book!: Book;
+  book?: Book;
   
 }

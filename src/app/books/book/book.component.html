@@ -6,26 +6,26 @@
       <img
         class="object-cover h-48 w-full rounded"
         mat-card-image
-        [src]="book.imageLink"
+        [src]="book?.imageLink"
         alt="Book Cover"
       />
     </div>
 
     <div class="px-2 w-1/2 flex flex-col">
       <span class="text-lg font-semibold leading-7 text-gray-900 mb-1">
-        <p class="md:truncate">{{ book.title }}</p>
+        <p class="md:truncate">{{ book?.title }}</p>
       </span>
 
     <!--Ratings,likes etc-->
       <div class="flex items-center mt-1">
         <mat-icon>star</mat-icon>
-        <span class="text-xs text-gray-700 pb-2">{{ book.rating }}</span>
+        <span class="text-xs text-gray-700 pb-2">{{ book?.rating }}</span>
         <span class="mx-2"></span>
         <mat-icon>thumb_up</mat-icon>
-        <span class="text-xs text-gray-700 pb-2">{{ book.likes }}</span>
+        <span class="text-xs text-gray-700 pb-2">{{ book?.likes }}</span>
         <span class="mx-2"></span>
         <mat-icon>thumb_down</mat-icon>
-        <span class="text-xs text-gray-700 pb-2">{{ book.dislikes }}</span>
+        <span class="text-xs text-gray-700 pb-2">{{ book?.dislikes }}</span>
       </div>
 
 
@@ -38,7 +38,7 @@
       </div>
 
       <div class="pt-5 bottom-0 right-1">
-        <p class="hover:font-bold text-blue-600">Read more..</p>
+        <a>Read more..</a>
       </div>
     </div>
   </div>

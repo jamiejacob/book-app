@@ -10,7 +10,7 @@ import { BookService } from '../../book.service';
 })
 export class BookDetailComponent {
   bookId: string = '';
-  book!: Book;
+  book?: Book;
   constructor(private route: ActivatedRoute, private bookService: BookService) {
     this.route.params.subscribe((params) => {
       this.bookId = params['id'];
