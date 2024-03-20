@@ -1,6 +1,6 @@
 # BookApp
 
-A basic Books web application. A prototype intended for a in depth conversation about the application. It has the following pages
+A basic Books web application done in Typescript using Angular framework and Tailwind CSS. It has the following pages
 1.Home page which shows the latests 3 books with search bar to search for other books 
 2.Books list page
 3.Book Detail page
