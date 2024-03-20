@@ -1,6 +1,6 @@
 # BookApp
 
-A basic Books web application done in Typescript using Angular framework and Tailwind CSS. It has the following pages
+A responsive books application done in Typescript using Angular framework and Tailwind CSS. It has the following pages
 
 ## 1.Home page which shows the latests 3 books with search bar to search for other books 
 <img width="1512" alt="Screenshot 2024-03-20 at 16 10 18" src="https://github.com/jamiejacob/book-app/assets/48206102/d5342e7d-098d-4453-ae4c-7b00231aace1">
